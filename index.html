@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home">
+        <h1>Welcome to My Portfolio</h1>
+        <p>Hi, I'm Adessa Isabel Falsis, an IT student specializing in your Object Oriented Programming.</p>
+    </section>
+
+    <section id="about">
+        <h2>About Me</h2>
+        <p>Sex: Female
+        <p>Age: 20 years old</p>    
+        <p>Birthday: October 22. 2004</p>    
+        <p>Birthday Place: Quezon City</p>    
+        <p>Citizenship: Filipino</p>    
+        <p> Religion: Catholic</p>   
+        <p>Civil Status: Single</p></p>    
+        <h3>Skills</h3>
+        <ul>
+            <li>Active Listening skills</li>
+            <li>Communication skills</li>
+            <li>Computer skills</li>             
+            
+        </ul>
+    </section>
+
+    <section id="projects">
+        <h2>Projects</h2>
+        <div class="project" onclick="openModal('project1')">
+            <h3>Project 1</h3>
+            <img src="pic1.png" alt="Project 1 Image">
+            <p>Description of project 1...</p>
+        </div>
+        <div class="project" onclick="openModal('project2')">
+            <h3>Project 2</h3>
+            <img src="pic2.png" alt="Project 2 Image">
+            <p>Description of project 2...</p>
+        </div>
+        <div class="project" onclick="openModal('project3')">
+            <h3>Project 3</h3>
+            <img src="pic3.png" alt="Project 3 Image">
+            <p>Description of project 3...</p>
+        </div>
+        <div class="project" onclick="openModal('project4')">
+            <h3>Project 4</h3>
+            <img src="pic4.png" alt="Project 4 Image">
+            <p>Description of project 4...</p>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <form id="contact-form">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+
+            <button type="submit">Send</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Adessa Isabel Falsis. All rights reserved.</p>
+    </footer>
+
+    <!-- Project Modals -->
+    <div id="project1" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('project1')">&times;</span>
+            <h3>Project 1</h3>
+            <img src="pic1.png" alt="Project 1 Image">
+            <p>Detailed description of project 1...</p>
+        </div>
+    </div>
+    <div id="project2" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('project2')">&times;</span>
+            <h3>Project 2</h3>
+            <img src="pic2.png" alt="Project 2 Image">
+            <p>Detailed description of project 2...</p>
+        </div>
+    </div>
+    <div id="project3" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('project3')">&times;</span>
+            <h3>Project 3</h3>
+            <img src="pic3.png" alt="Project 3 Image">
+            <p>Detailed description of project 3...</p>
+        </div>
+    </div>
+    <div id="project4" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('project4')">&times;</span>
+            <h3>Project 4</h3>
+            <img src="pic4.png" alt="Project 4 Image">
+            <p>Detailed description of project 4...</p>
+        </div>
+    </div>
+
+    <script src="scripts.js"></script>
+</body>
+
+</html>
